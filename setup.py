@@ -14,6 +14,8 @@ setup(
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
     author="Full name",
+    author_email="example@mail.com",
+    url="https://mail.com",
     license="MIT",
     install_requires=[
         "numpy",
