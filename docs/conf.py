@@ -23,6 +23,7 @@ extensions = [
     'sphinx.ext.viewcode',  # Add links to the Python source code
     'sphinx.ext.napoleon',  # Support for NumPy and Google style docstrings
     'sphinx.ext.mathjax',   # Render math
+    'sphinx_book_theme',    # Theme (needed here for ReadTheDocs)
 ]
 
 # LaTeX math

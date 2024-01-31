@@ -53,11 +53,13 @@ Once `setup.py` has been configured, a package can be created with:
 python setup.py sdist bdist_wheel
 ```
 
-This will create or update a `dist/` folder with the [wheel](https://realpython.com/python-wheels/) file that makes installation of the package work and a `.tar.gz` file. There will also be a `package.egg-info` file but these are not included in the Git repository.
+This will create or update a `dist/` folder with the [wheel](https://realpython.com/python-wheels/) file that makes installation of the package work and a `.tar.gz` file. There will also be a `package.egg-info` file but all these folders and files related to distribution and packaging are not included in the Git repository (as defined in `.gitignore`).
 
 ### Uploading the package to PyPI
 
 After generating the distribution files, the next step would be to upload the distribution so others can use it. This functionality is provided by [twine](https://pypi.org/project/twine) and is documented in the [Python packaging tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
+
+A good tutorial for the whole packaging/uploading process can be found [here](https://www.freecodecamp.org/news/build-your-first-python-package/).
 
 ## About the documentation with Sphinx
 
@@ -84,5 +86,7 @@ make html
 The site should be in `docs/build/html/index.html`. To update after making changes, type:
 
 ```bash
-make html
+make clean html
 ```
+
+There are plenty of other configurations, like favicons, images, etc.
